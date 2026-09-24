@@ -1,0 +1,18 @@
+C:\Users\GEN2\Desktop\quickhire\backend\ai\nlp\gemini_service.py:2: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+[2026-04-25 14:03:42,742: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2026-04-25 14:03:42,928: WARNING/MainProcess] No hostname was supplied. Reverting to default 'localhost'
+[2026-04-25 14:03:42,930: INFO/MainProcess] Connected to memory://localhost//
+[2026-04-25 14:03:42,942: INFO/MainProcess] celery@FORTUNECODEX ready.
+forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FF85E44A3CD  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF85F89E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF8615EC3FC  Unknown               Unknown  Unknown

@@ -1,0 +1,84 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good day
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: get_top_candidates
+  examples: |
+    - show me the top 5 candidates
+    - who are the best candidates for this job?
+    - list top candidates
+    - ranking of candidates
+    - who is the best?
+    - show top ranked people
+    - top candidates for backend engineer
+
+- intent: get_candidate_details
+  examples: |
+    - tell me about candidate [John Doe](candidate_name)
+    - who is [Jane Smith](candidate_name)?
+    - get details for candidate [123](candidate_id)
+    - show profile of [Michael](candidate_name)
+    - what are the skills of [Sarah](candidate_name)?
+    - explain the score for [John Doe](candidate_name)
+    - why is [Sarah](candidate_name) ranked first?
+
+- intent: compare_candidates
+  examples: |
+    - compare [John Doe](candidate_name) and [Jane Smith](candidate_name)
+    - show side by side comparison of [Alice](candidate_name) vs [Bob](candidate_name)
+    - compare candidate 1 and candidate 2
+    - who has more experience between [John](candidate_name) and [Sarah](candidate_name)?
+
+- intent: get_system_architecture
+  examples: |
+    - what is the system architecture?
+    - explain the quickhire processing pipeline
+    - what tech stack is used in quickhire?
+    - how does OCR and PyTorch layout analysis work?
+    - how does SentenceTransformers embedding work?
+    - explain SRS version 1.0 specifications
+
+- intent: get_business_rules
+  examples: |
+    - what are the business rules?
+    - what is BR-004 and BR-009?
+    - how is bias prevented in candidate ranking?
+    - explain POPIA compliance in quickhire
+    - what is the human in the loop rule BR-010?
+
+- intent: help_navigation
+  examples: |
+    - how do I upload a CV?
+    - where can I see the rankings?
+    - how to use this platform?
+    - what can I do here?
+    - help me
+    - how do I export a ranking report?

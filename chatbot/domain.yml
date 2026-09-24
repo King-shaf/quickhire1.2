@@ -1,0 +1,57 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - get_top_candidates
+  - get_candidate_details
+  - compare_candidates
+  - get_job_match
+  - get_system_architecture
+  - get_business_rules
+  - help_navigation
+
+responses:
+  utter_greet:
+  - text: "Hello! I am the QUICK HIRE AI Recruitment Assistant. How can I assist you with candidate ranking, profile screening, or system navigation today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great! Let me know if you need further candidate comparisons or ranking breakdowns."
+
+  utter_goodbye:
+  - text: "Goodbye! Feel free to reach out anytime for recruitment assistance."
+
+  utter_iamabot:
+  - text: "I am the QUICK HIRE AI Recruitment Assistant, integrated directly into the QUICK HIRE semantic ranking platform."
+
+  utter_help:
+  - text: "I can help you find top candidates, compare candidate profiles side-by-side, explain ranking score factors, and provide information on system architecture and business rules (BR-001 to BR-010). What would you like to explore?"
+
+  utter_system_architecture:
+  - text: "QUICK HIRE Architecture & Pipeline (SRS v1.0):\n- Upload: PDF/PNG/JPEG CVs (max 10MB, up to 50 files) via pdf2image & Poppler.\n- Pipeline: Image Enhancement -> Tesseract OCR (80%+ target) -> PyTorch CNN layout analysis -> spaCy NLP entity extraction -> SentenceTransformers semantic embeddings.\n- Ranking: Cosine similarity (min 60% weight) + explicit skill match in PostgreSQL 13+."
+
+  utter_business_rules:
+  - text: "QUICK HIRE Governance & Rules:\n- BR-001/002: Recruiter/Admin role access control.\n- BR-004: Ranking driven by semantic similarity (min 60%) + skill match.\n- BR-006: Factor explanations for transparency.\n- BR-009: Bias Prevention (no demographic data used in similarity).\n- BR-010: Advisory recommendations with human-in-the-loop.\n- Compliance: South African POPIA compliance."
+
+actions:
+  - action_get_top_candidates
+  - action_get_candidate_details
+  - action_compare_candidates
+  - action_get_system_architecture
+  - action_get_business_rules
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

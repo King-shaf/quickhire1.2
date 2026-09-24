@@ -1,0 +1,21 @@
+ 
+ -------------- celery@FORTUNECODEX v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Windows-11-10.0.26200-SP0 2026-04-25 14:03:42
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         quickhire:0x1f741b192b0
+- ** ---------- .> transport:   memory://localhost//
+- ** ---------- .> results:     memory:///
+- *** --- * --- .> concurrency: 8 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . quickhire.celery.debug_task
+  . tasks.tasks.process_cv_task
+  . tasks.tasks.refresh_ranking_task
+
