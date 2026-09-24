@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # QuickHire - AI-Powered Candidate Ranking Platform
 
 QuickHire is an end-to-end recruitment platform that ingests CVs via OCR/NLP, stores structured candidate data, and uses semantic (pgvector) + skill-based ranking to match candidates to job descriptions. Includes an AI chatbot, full audit trail, multi-company tenancy, and Supabase Auth integration.
@@ -256,3 +257,7 @@ quickhire/
 - **Row Level Security**: The Supabase SQL migration enables RLS on every public table and ships tenant-scoped policies. Users only see candidates/jobs in their `company_id` (or everything for `admin`).
 - **Sessions**: Django session timeout = 30 minutes; JWT access tokens = 60 minutes; refresh tokens = 1 day.
 - **Passwords**: Demo accounts use `QuickHire@2026` — change these (or re-run `seed_demo.py`) before exposing the app to a network.
+=======
+# quickhire1.2
+the updated version of quickhire
+>>>>>>> c36912e1351b78a5068ab85b17ed1e903b3ecb51
