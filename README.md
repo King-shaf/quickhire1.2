@@ -18,7 +18,7 @@ QuickHire is an end-to-end recruitment platform that ingests CVs via OCR/NLP, st
 
 ## 🔑 API Keys Configuration
 
-Before running the application, you need to configure your API keys. We have removed all hardcoded keys for security purposes and left specific placeholders in the codebase where applicable (e.g. `'your-gemini-api-key-here'`).
+Before running the application, you need to configure your API keys. Look for specific placeholders in the codebase where applicable (e.g. `'your-gemini-api-key-here'`).
 
 ### 1. Setting up Environment Variables (Recommended)
 The best way to configure your API keys is by using `.env` files.
